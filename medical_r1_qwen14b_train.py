@@ -13,7 +13,7 @@ logger = logging.getLogger(__name__)
 
 def initialize_wandb():
     """Initialize Weights & Biases for experiment tracking."""
-    wb_token = "956c802b479fdbbf621f6f36f087f7b49531198a"
+    wb_token = ""
     try:
         wandb.login(key=wb_token)
         run = wandb.init(
