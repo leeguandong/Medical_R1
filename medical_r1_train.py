@@ -8,7 +8,7 @@ from unsloth import is_bfloat16_supported
 
 def setup_wandb():
     """Initialize Weights & Biases for experiment tracking."""
-    wb_token = "956c802b479fdbbf621f6f36f087f7b49531198a"
+    wb_token = ""
     wandb.login(key=wb_token)
     run = wandb.init(
         project="Fine-tune-DeepSeek-R1-Distill-Llama-8B on Medical COT Dataset",
